@@ -1,0 +1,349 @@
+@import url("style.css");
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  /* Mon charte de couleur graphique */
+  --darkgray: #212329;
+  --brightred: #f9423d;
+  --white: #fff;
+  --lightred: #f9433dcc;
+  /* @media  */
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  /* les tailles d'écran 
+  Desktop : au delà de 1024 pixels.
+Tablette : entre 600 et 1024 pixels (en mode portrait)
+Mobile : entre 320 et 600 pixels (en mode portr
+
+  */
+}
+.contenu {
+  display: flex;
+  margin-top: 25px;
+}
+
+/* -------------- 
+    COLONNE gauche
+--------------- */
+div.colDroite {
+  width: 20%;
+  color: var(--white);
+  
+}
+
+.contact {
+  margin: 30px 0 100px 0;
+}
+.aContact {
+  margin-left: 25px;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+.aContact:hover {
+  text-decoration: none;
+  color: #93192a;
+}
+.mail,
+.tel {
+  color: #93192a;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.avis {
+  margin: 10px;
+  margin-bottom: 100px;
+  padding: 10px;
+  border: 2px dashed #93192a;
+}
+.consultezAvis {
+  text-decoration: none;
+  color: #000000;
+  font-size: 22px;
+  text-decoration: underline;
+}
+.consultezAvis:hover {
+  text-decoration: none;
+  color: #93192a;
+  cursor: pointer;
+}
+.avisMmeChic {
+  font-size: 18px;
+}
+.mmcChic {
+  text-align: right;
+}
+
+.saisirRecherche {
+  margin-left: 5px;
+  font-size: 12px;
+  padding: 7px;
+}
+.recherche {
+  background: #c4c4c4;
+  color: #fff;
+  border: #fff;
+  padding: 2px;
+  font-size: 14px;
+}
+.recherche:hover {
+  background: #e8ba6d;
+}
+/* partie droite */
+
+div.container {
+    display: flex;
+    justify-content: space-between;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
+  margin: 0 auto;
+ width: auto;
+ color: var(--white);
+ text-align: center;
+  
+}
+h1 {
+  text-align: center;
+  margin: 30px 0 30px 0;
+  font-size: 50px;
+color: var(--brightred);
+}
+.h1Detail {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0 15px 0;
+  width: 750px;
+  font-family: "EB Garamond", serif;
+  font-size: 22px;
+  border-top: 2px solid #93192a;
+  color: var(--white);
+}
+img.img {
+  width: auto;
+  height: auto;
+ vertical-align:middle;
+}
+img{
+width: 300px;
+height: 260px;
+
+
+}
+.decouvrezCartes {
+  margin: 30px 0 30px 0;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 30px;
+}
+.troisCartes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 950px;
+}
+div.carte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+a.aCarte {
+  text-decoration: none;
+  color: var(--brightred);
+  text-align: center;
+  
+  font-size: 22px;
+}
+.aCarte:hover {
+  text-decoration: none;
+  color: #93192a;
+  text-decoration: underline;
+}
+.pCarte {
+  margin: 10px 0 100px 0;
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+}
+.reservationTable {
+  margin: 0 auto;
+  padding: 50px 0 50px 0;
+  width: 400px;
+  text-align: center;
+  border: 1px solid #93192a;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width:958px){
+body {width: 100%;}
+  div.contenu{
+   display: grid;
+   grid-template-columns: 1fr ;
+ justify-content: center;
+ vertical-align: middle;
+   /* flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+   width: 300px;
+   align-self: center; */
+   
+  }
+  h1#navbar-logo{
+    max-width: 140px;
+    max-height:24px;
+  }
+  section.avis{
+    width: 300px;
+    margin-left:0px 0px 0px 0px;
+  }
+  div.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+  }
+  div.troisCartes{
+    display:flex;
+    flex-wrap: wrap;
+    width:300px;
+  }
+  a.aCarte{
+    font-size:20px;
+  }
+  img{
+    width: 250px;
+    height:250px;
+  }
+  img.img{
+    width: 450px;
+  }
+  h1.container-fluid{
+    text-align: center;
+    font-size:25px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left:15px;
+  }
+  h1#navbar-logo{
+    font-size:25px;
+  }
+  div.colDroite{
+   display: flex;
+   display: inline-block;
+   flex-direction: column;
+   flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    margin-left:10px;
+    width:100%;
+    height:300;
+  }
+  div.container{
+    display: flex;
+
+  }
+  p.h1Detail{
+    text-align: center;
+    vertical-align: middle;
+   
+    width:300px;
+  }
+   img.photoChambre.img-fluid{
+    vertical-align: middle;
+    width: 300px;
+    align-self: middle;
+  }
+}
+@media screen and (max-width:480px){
+  h1#navbar-logo {
+    display: flex;
+    vertical-align: middle;
+    align-items: flex-start;
+    margin: 0px 0px 0px 0px;
+    width: 150px;
+    
+  }
+h1#navbar-logo{
+  font-size:16px
+}
+  div.contenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+   align-self: center;
+   margin-left: 10px;
+   padding-left: 15px;
+   vertical-align: middle;
+   
+  }
+  h1{
+    font-size:25px;
+  }
+  div.troisCartes{
+    display: inline-block;
+    width: 250px;
+  }
+  
+  div.carte{
+    width: 100%;
+  }
+  div.container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  img.img{
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  p.h1Detail{
+    text-align: center;
+    vertical-align: middle;
+   
+    width:300px;
+  }
+   img.photoChambre.img-fluid{
+    vertical-align: middle;
+    width: 300px;
+    align-self: middle;
+  }
+h1#navbar-logo{
+    font-size:25px;}
+}

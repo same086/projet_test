@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="l'hôtel Parimis 5 étoiles vous propose un service d'hôtellerie,de spa et de restauration" />
+    <meta name="robots" content="noindex,noffollow" />
+    <meta name="keywords" content="restaurant, spa et soins,hôtel">
+    <title>Reservation-Parimis</title>
+    <link rel="stylesheet" href="reserver.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+        integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Nunito:ital@1&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!--TODO: début de la partie header ( barre barre de navigation)  -->
+    <div class="nav-container">
+        <nav class="navbar">
+            <h1 id="navbar-logo"><a href="index.html"><i class="fas fa-gem"> </i></a> PARIMIS</h1>
+            <!-- .menu-toggle#mobile-menu: pour le menu Burger qui apparait en format mobile -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <!--FIXME: li>a.nav-link -->
+                <!-- <li><a href="#" class="nav-links">Accueil</a></li> -->
+                <li><a href="chambre.html" class="nav-links">Chambres</a></li>
+                <li><a href="restaurant.html" class="nav-links">Restaurant </a></li>
+                <li><a href="hotel.html" class="nav-links">Hôtel </a></li>
+                <li><a href="spa_soins.html" class="nav-links">Spa </a></li>
+                <li><a href="reserver.html" class="nav-links nav-links-btn">Réservation</a></li>
+
+                <li><a href="panier.html" class="nav-links"><i class="fa-solid fa-cart-shopping"></i>Panier </a></li>
+                </li>
+                <li>
+                    <a href="#" class="nav-links langage"> Fr-Eng</a></a>
+                </li>
+                <li> <i class=" nav-links fa-brands fa-searchengin">rech</i></li>
+            </ul>
+        </nav>
+    </div>
+    <!--  TODO: fin de la partie navigation barre -->
+
+    <!-- FIXME:  Partie main-->
+
+<div class="contenu">
+    <div class="colDroite">
+        <section class="contact">
+            <a href="acces-contact.html" class="aContact">Contact</a>
+            <p><span class="mail">Email: </span><span>contact@parimis.com</span></p>
+            <p><span class="tel">Téléphone: </span><span>+33 130 75 69 54</span></p>
+        </section>
+        <section class="avis">
+            <a href="avis.html" class="consultezAvis">Consultez nos avis clients</a>
+            <p class="avisAntoine">« Un havre de paix en plein coeur de Paris »</p>
+            <p>Un personnel d'une efficacité et d'une attention extraordinaire ! Un superbe établissement comme on
+                aimerait en trouver plus souvent.</p>
+            <p class="antoine">M.Samake</p>
+        </section>
+        <div class="rechercheSmartphone">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="saisirRecherche form-control mr-sm-2" type="search"
+                    placeholder="Saisissez votre recherche" aria-label="Search">
+                <button class="recherche btn btn-outline-bg-light my-2 my-sm-0" type="submit">Recherche</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="reservationHotel">
+            <h1 class="reserver">Réservation</h1>
+            <h2 class="reserver">Pour réserver une chambre, veuillez remplir le formulaire ci-dessous</h2>
+            <form action="">
+                <p class="formulaire">
+                    <label for="chambres">Choisir une chambre :</label>
+                    <select class="chambres" name="chambres">
+                        <option value="chambreClassique">Chambre Classique</option>
+                        <option value="chambreConfort">Chambre Confort</option>
+                        <option value="chambreDeluxe">Chambre Deluxe</option>
+                        <option value="suite">Chambre Suite</option>
+                    </select>
+                </p>
+                <p class="formulaire">
+                    <label for="nbrChambre">Chambre : </label>
+                    <select class="nbrChambre" name="nbrChambre">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </p>
+                <p class="formulaire">
+                    <label for="nbrAdultes">Adultes : </label>
+                    <select class="nbrAdultes" name="nbrAdultes">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </p>
+                <p class="formulaire">
+                    <label for="nbrEnfants">Enfants : </label>
+                    <select class="nbrEnfants" name="nbrEnfants">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </p>
+                <p class="formulaire">
+                    <label for="date">Choisir une date d'arrivée : </label>
+                    <input type="date" name="date" id="date" min="2018-11-01">
+                </p>
+                <p class="formulaire">
+                    <label for="date">Choisir une date de départ : </label>
+                    <input type="date" name="date" id="date" min="2018-11-01">
+                </p>
+                <p class="formulaire inputLigne">
+                    <input type="submit" value="Reserver">
+                </p>
+            </form>
+        </div>
+        <div>
+            <h2 class="reserver">***Pour réserver une table dans notre restaurant***</h2>
+            <p class="reservationRestaurant">Veuillez vous adresser directement à notre personnel, par téléphone au +33
+                188 88 88 88 ou par mail à l'adresse contact@parimis.com</p>
+        </div>
+        <div>
+            <h2 class="reserver">***Pour réserver un soin dans notre spa***</h2>
+            <p class="reservationSpa">Veuillez vous adresser directement à notre personnel, par téléphone au +33 188 88
+                88 88 ou par mail à l'adresse contact@parimis.com</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <!--FIXME: Fin partie main -->
+
+<!-- Partie footer -->
+<hr>
+<footer class="footer-container">
+    <div class="footer-links">
+        <div class="footer-link-wrapper">
+            <div class="footer-link-items">
+                <h2>Conditions et Politiques</h2>
+                <a href="mentions.html">Conditions de service</a>
+                <a href="mentions.html"> Déclaration sur la prootection des données</a>
+
+
+            </div>
+            <div class="footer-link-items">
+                <h2>Mentions legales </h2>
+                <a href="planSite.html">Contact</a>
+                <a href="planSite.html"> Plan du site</a>
+                <a href="images/details-print_files/"> <i class="fa-solid fa-print"></i> Imprimer la page</a>
+            </div>
+            <div class="footer-link-items">
+                <h2>Nous contacter</h2>
+                <a href="reserver.html">Annuler votre reservation</a>
+                <a href="cgv.html"> Aide et informations</a>
+                <a href="pageEvenement.html"> video</a>
+            </div>
+            <div class="footer-link-items">
+                <h2>Réseaux sociaux</h2>
+                <a href="https://www.instagram.com">Instagram</a>
+                <a href="https://fr-fr.facebook.com"> Facebook</a>
+                <a href="https://www.youtube.com">Youtube</a>
+                <a href="https://www.20minutes.fr/high-tech/twitter/"> Twitter</a>
+                <a href="https://fr.linkedin.com/"> LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <div class="social-media">
+        <div class="social-media-wrap">
+            <div class="footer-logo">
+                <a href="" id="footer-logo"><i class="fas fa-gem"></i> PARIMIS</a>
+            </div>
+            <p class="website-right">@2022.Tous droits reservés</p>
+            <section class="newsletter social-icon-link">
+                <aside class="letter social-icon-link">
+                    <span class="news social-icon-link">Newsletter</span>
+                </aside>
+                <input type="text" id="prenom" name="prenom" placeholder=" Votre adresse email Svp!">
+                <button type="button" class="inscription  social-icon-link">S'inscrire</button>
+            </section>
+            <div class="social-icons">
+                <a href="https://fr-fr.facebook.com/" class="social-icon-link" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="social-icon-link" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" class="social-icon-link" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.20minutes.fr/high-tech/twitter/" class="social-icon-link" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://fr.linkedin.com/" class="social-icon-link" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+</footer>
+<!-- Fin  partie footer -->
+    <script src="app.js"></script>
+</body>
+
+</html>

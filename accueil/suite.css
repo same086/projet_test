@@ -1,0 +1,251 @@
+@import url("style.css");
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  /* Mon charte de couleur graphique */
+  --darkgray: #212329;
+  --brightred: #f9423d;
+  --white: #fff;
+  --lightred: #f9433dcc;
+  /* @media  */
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  /* les tailles d'écran 
+  Desktop : au delà de 1024 pixels.
+Tablette : entre 600 et 1024 pixels (en mode portrait)
+Mobile : entre 320 et 600 pixels (en mode portr
+
+  */
+}
+/* hr{margin:50px 0px;border: 1px solid #7952B3;} */
+.contenu {
+  display: flex;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+/* -+*+*+*+/-----Element de DROITE *-+-*-+---- */
+.colDroite {
+  width: 250px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.contact {
+  margin: 30px 0 100px 0;
+}
+a.aContact {
+  text-align: center;
+  margin-left: 25px;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+.aContact:hover {
+  text-decoration: none;
+  color: #93192a;
+}
+.mail,
+.tel {
+  color: #93192a;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.avis {
+  margin: 10px;
+  margin-bottom: 100px;
+  padding: 10px;
+  border: 2px dashed #93192a;
+}
+.consultezAvis {
+  text-decoration: none;
+  color: #000000;
+  font-size: 22px;
+  text-decoration: underline;
+}
+.consultezAvis:hover {
+  text-decoration: none;
+  color: #93192a;
+  cursor: pointer;
+}
+.avisMmeChic {
+  font-size: 18px;
+}
+.mmcchic {
+  text-align: right;
+}
+
+
+
+  /* fin element droite */
+
+/* *******------element de gauche**-*-*- */
+h1 {
+  text-align: center;
+  margin: 30px 0 30px 0;
+  font-size: 50px;
+  color: var(--brightred);
+}
+.h1Detail {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0 35px 0;
+  width: 750px;
+  font-size: 22px;
+  border-top: 2px solid #93192a;
+  color: #fff;
+}
+
+.chambres {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.blocChambre {
+  margin: 10px;
+}
+.photoChambre {
+  margin-bottom: 35px;
+}
+h2.chDeluxe {
+  text-align: center;
+  background: var(--darkgray);
+  color: var(--brightred);
+}
+.aH2 {
+  text-decoration: none;
+  color: var(--brightred);
+}
+.aH2:hover {
+  text-decoration: none;
+  color: #93192a;
+}
+.reservationChambre {
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.boutonResa {
+  width: 100%;
+  background: var(--brightred);
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+  word-spacing: 5px;
+  padding: 5 auto;
+  align-self: center;
+}
+.boutonResa:hover {
+  cursor: pointer;
+}
+section.avis {
+  color: #c4c4c4;
+}
+section.contact {
+  color: #fff;
+}
+/* fin element gauche */
+
+@media screen and (max-width:958px){
+
+  div.contenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+   width: 300px;
+   align-self: center;
+   
+  }
+  h1.container-fluid{
+    text-align: center;
+    font-size:25px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left:15px;
+  }
+  p.h1Detail{
+    text-align: center;
+    vertical-align: middle;
+   
+    width:300px;
+  }
+  h2.chDeluxe{
+    
+  }
+  img.photoChambre.img-fluid{
+    vertical-align: middle;
+    width: 300px;
+    align-self: middle;
+  }
+  button.boutonResa{
+    width: 300px;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+}
+
+@media screen and (max-width:480px){
+  h1#navbar-logo {
+    display: flex;
+    vertical-align: middle;
+    align-items: flex-start;
+    margin: 0px 0px 0px 0px;
+    width: 150px;
+    
+  }
+
+  div.contenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+   width: 100%;
+   align-self: center;
+   margin-left: 25px;
+   padding-left: 25px;
+   vertical-align: middle;
+   
+  }
+  div.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+  }
+}
+
